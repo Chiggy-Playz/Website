@@ -1,0 +1,45 @@
+* {
+    font-family: 'Noto Sans', sans-serif;
+}
+
+body {
+    background-color: #101010;
+    margin: 4em;
+}
+
+h1,
+h2 {
+    color: #ffffff;
+}
+
+h3 {
+    color: #b7b7b7;
+}
+
+p,
+li {
+    color: #b7b7b7;
+    font-size: large;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:link,
+a:visited {
+    color: #5cc4f8c7;
+}
+
+a:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+}
+
+code {
+    background-color: #556970;
+    padding-left: 6px;
+    padding-right: 6px;
+    padding-bottom: 4px;
+    border-radius: 10px;
+}

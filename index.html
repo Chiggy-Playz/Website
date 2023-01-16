@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Chiggy's Vault
+    </title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+
+    <!-- Twemoji -->
+    <!-- This retrieves the latest Twemoji script -->
+    <script src="https://unpkg.com/twemoji@latest/dist/twemoji.min.js" crossorigin="anonymous"></script>
+
+
+    <!-- Script to render emojis as Twemojis -->
+    <script>
+        window.onload = function () {
+            // Parses the document body and    
+            // inserts <img> tags in place of Unicode Emojis    
+            twemoji.parse(document.body,
+                { folder: 'svg', ext: '.svg', base: 'https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/' } // This is to specify to Twemoji to use SVGs and not PNGs
+            );
+
+        }
+
+    </script>
+
+    <!-- CSS configurations to tweak how the Twemojis are displayed -->
+    <style>
+        img.emoji {
+            /* Since we are using SVGs, you have to change the width using CSS */
+            width: 1em;
+
+            /* 
+            This is to make the emojis feel like actual emojis to 
+            the user and they won't act like images. This makes the emojis
+            non-reactive to any mouse events such as dragging, 
+            hovering, clicking etc. Makes it feel like its actual text.
+            */
+            pointer-events: none;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>
+        Hey there! 👋
+    </h1>
+    <p>It seems you've landed in chiggy's Vault. It's pretty empty right now, though. All you can do here is watch some
+        jellyfin 😛</p>
+    <p>Suggested applications to use jellyfin:</p>
+    <ul>
+        <li>
+            <h3><a href="https://play.google.com/store/apps/details?id=dev.jdtech.jellyfin&hl=en_IN&gl=US">Android -
+                    Findroid</a></h3>
+        </li>
+        </a>
+        <li>
+            <h3><a href="https://github.com/jellyfin/jellyfin-media-player/releases">Desktop - Jellyfin Media Player</a>
+                (Scroll down, and under "Assets" section, choose the one for your OS)</h3>
+        </li>
+        </a>
+        <li>
+            <h3><a href="https://play.google.com/store/apps/details?id=org.jellyfin.androidtv&hl=en_IN&gl=US">Android TV
+                    - Official jellyfin client</a></h3>
+        </li>
+        </a>
+        <li>
+            <h3><a href="https://apps.apple.com/in/app/swiftfin/id1604098728">IOS - Swiftfin</a></h3>
+        </li>
+        </a>
+    </ul>
+
+    <h2>Steps to connect</h2>
+    <div style="margin-left: 10px;">
+        <ul>
+            <li>
+                Download the app for your platform using the list above
+            </li>
+            <li>
+                Type in <code>jellyfin.chiggydoes.tech</code> as the server URL
+            </li>
+            <li>Enter your credentials</li>
+            <li>And you're done! Have fun 😎</li>
+        </ul>
+    </div>
+</body>
+
+</html>
