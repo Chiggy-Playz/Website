@@ -43,3 +43,27 @@ code {
     padding-bottom: 4px;
     border-radius: 10px;
 }
+
+/* Twemoji */
+img.emoji {
+    /* Since we are using SVGs, you have to change the width using CSS */
+    width: 4vh;
+
+    /* 
+    This is to make the emojis feel like actual emojis to 
+    the user and they won't act like images. This makes the emojis
+    non-reactive to any mouse events such as dragging, 
+    hovering, clicking etc. Makes it feel like its actual text.
+    */
+    pointer-events: none;
+}
+
+p > img.emoji {
+    width: 3vh;
+    pointer-events: none;
+}
+
+li > img.emoji {
+    width: 3vh;
+    pointer-events: none;
+}
